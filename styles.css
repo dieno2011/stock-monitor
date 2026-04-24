@@ -19,7 +19,7 @@ main {
     display: flex;
     padding: 20px;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -31,9 +31,42 @@ main {
 }
 
 aside {
-    width: 200px;
+    width: 350px;
     border-left: 1px solid #ccc;
     padding-left: 20px;
+}
+
+#add-stock {
+    margin-bottom: 10px;
+    width: 80%;
+    padding: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+}
+
+tbody {
+    display: block;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+thead, tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
 }
 
 #watchlist {
