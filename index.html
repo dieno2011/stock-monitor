@@ -14,6 +14,32 @@
         <section id="chart-container">
             <p>Grafik Saham (Contoh data statis)</p>
             <canvas id="stockChart"></canvas>
+            <div class="tradingview-widget-container">
+              <div id="tradingview_abcde"></div>
+              <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+              <script type="text/javascript">
+              new TradingView.widget({
+                 "container_id": "tradingview_abcde",
+                 "autosize": true,
+                 "symbol": "NASDAQ:AAPL",
+                 "interval": "D",
+                 "timezone": "exchange",
+                 "theme": "light",
+                 "style": "1",
+                 "locale": "en",
+                 "toolbar_bg": "#f1f3f6",
+                 "enable_publishing": false,
+                 "allow_symbol_change": true,
+                 "details": true,
+                 "hotlist": true,
+                 "calendar": true,
+                 "studies": [
+                    "MACD@tv-basicstudies",
+                    "RSI@tv-basicstudies"
+                 ]
+              });
+              </script>
+            </div>
         </section>
         <aside>
             <h2>Watchlist</h2>
