@@ -27,7 +27,7 @@ main {
     flex-grow: 1;
     margin-right: 20px;
     position: relative;
-    height: 5000px; /* Sesuaikan tinggi widget sesuai kebutuhan */
+    height: 2000px; /* Sesuaikan tinggi widget sesuai kebutuhan */
 }
 
 aside {
