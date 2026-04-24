@@ -26,6 +26,8 @@ main {
 #chart-container {
     flex-grow: 1;
     margin-right: 20px;
+    position: relative;
+    height: 500px; /* Sesuaikan tinggi widget sesuai kebutuhan */
 }
 
 aside {
