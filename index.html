@@ -44,14 +44,26 @@
         </section>
         <aside>
             <h2>Watchlist</h2>
-            <ul id="watchlist">
-                <li>AAPL</li>
-                <li>GOOGL</li>
-                <li>MSFT</li>
-                <li>TSLA</li>
-            </ul>
+            <input type="text" id="add-stock" placeholder="Tambah emitten (contoh: AAPL)" />
+            <button id="add-button">Tambah</button>
+            <table id="watchlist">
+                <thead>
+                    <tr>
+                        <th>Emiten</th>
+                        <th>Harga</th>
+                        <th>ARB</th>
+                        <th>ARA</th>
+                        <th>Prediksi 5D</th>
+                        <th>Suggest</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be dynamically populated -->
+                </tbody>
+            </table>
         </aside>
     </main>
+    <script src="https://s3.tradingview.com/tv.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
